@@ -23,7 +23,7 @@ export const metadata = {
   themeColor: "#9DE8AD",
   openGraph: {
     title: "Rosie’s Janitorial Services",
-    description: "Professional cleaning services for homes and businesses.",
+    description: "Professional cleaning services for businesses.",
     url: "https://rosiesjanitorialoc.com",
     siteName: "Rosies Janitorial",
     locale: "en_US",

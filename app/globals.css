@@ -1,147 +1,57 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #509ce9;
+  --foreground: #a78bfa;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+/* Remove @theme inline — it overrides Tailwind's whole palette */
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+/* Optional: keep this dark mode toggle */
 
+
+/* Use your custom font everywhere */
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--dm-serif-text), serif;
 }
-/* Fade-in motion */
+
+/* Animations... unchanged */
 @keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .animate-fade-in {
-  animation: fade-in 0.6s ease-out forwards;
+  animation: fade-in 0.9s ease-out forwards;
 }
 
-/* Shine sweep animation */
-.shine {
-  position: absolute;
-  top: 0;
-  left: -150%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.45) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transform: skewX(-20deg);
-  animation: shine-move 2.5s ease-in-out infinite;
-}
+
 
 @keyframes shine-move {
-  0% {
-    left: -150%;
-  }
-  60% {
-    left: 200%;
-  }
-  100% {
-    left: 200%;
-  }
+  0% { left: -150%; }
+  60% { left: 200%; }
+  100% { left: 200%; }
 }
 
-/* Fade-in motion */
-@keyframes fade-in {
-  from {
-    opacity: 0;
-    transform: translateY(12px);
-  }
-  to {
+
+@keyframes soft-pulse {
+  0% {
+    transform: scale(1);
     opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.animate-fade-in {
-  animation: fade-in 0.6s ease-out forwards;
-}
-
-/* Shine sweep animation */
-.shine {
-  position: absolute;
-  top: 0;
-  left: -150%;
-  width: 50%;
-  height: 100%;
-  background: linear-gradient(
-    120deg,
-    rgba(255, 255, 255, 0) 0%,
-    rgba(255, 255, 255, 0.45) 50%,
-    rgba(255, 255, 255, 0) 100%
-  );
-  transform: skewX(-20deg);
-  animation: shine-move 2.5s ease-in-out infinite;
-}
-
-@keyframes shine-move {
-  0% {
-    left: -150%;
-  }
-  60% {
-    left: 200%;
-  }
-  100% {
-    left: 200%;
-  }
-}
-
-/* Floating Dust Particles */
-.dust-particle {
-  position: absolute;
-  bottom: -10px;
-  border-radius: 9999px;
-  background: white;
-  box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.6);
-  animation-name: dust-rise, dust-flicker;
-  animation-timing-function: ease-out;
-  animation-iteration-count: infinite;
-}
-
-/* Upward drifting */
-@keyframes dust-rise {
-  from {
-    transform: translateY(0) translateX(0);
-  }
-  to {
-    transform: translateY(-120vh) translateX(10px);
-  }
-}
-
-/* Subtle shimmer / flicker */
-@keyframes dust-flicker {
-  0%, 100% {
-    opacity: 0.2;
   }
   50% {
-    opacity: 0.7;
+    transform: scale(1.08);
+    opacity: 0.85;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
+
+.pulse-number {
+  display: inline-block;
+  font-weight: 700;
+  animation: soft-pulse 5.9s ease-in-out infinite;
+}
+

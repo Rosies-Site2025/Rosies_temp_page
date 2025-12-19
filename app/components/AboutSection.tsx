@@ -91,7 +91,7 @@ export default function AboutSection() {
             >
               <div className="relative rounded-2xl overflow-hidden shadow-2xl group">
                 <motion.img 
-                  src="/about-rosies.jpg" 
+                  src="/rosies_logo.png" 
                   alt="Rosie's Janitorial Services Team"
                   className="w-full h-96 object-cover"
                   whileHover={{ scale: 1.05 }}

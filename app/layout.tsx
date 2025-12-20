@@ -108,9 +108,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://www.rosiesjanitorialoc.com',
   },
-  verification: {
-    google: 'your-google-verification-code',
-  },
+ 
   other: {
     'geo.region': 'US-CA',
     'geo.placename': 'Rancho Santa Margarita',

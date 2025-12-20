@@ -52,9 +52,9 @@ export default function Navigation() {
                 <Phone size={14} />
                 <span>(949) 687-8297</span>
               </a>
-              <a href="mailto:info@rosiesjanitorialoc.com" className="hidden sm:flex items-center gap-2 hover:text-black transition-colors">
+              <a href="mailto:contact@rosiesjanitorialoc.com" className="hidden sm:flex items-center gap-2 hover:text-black transition-colors">
                 <Mail size={14} />
-                <span>info@rosiesjanitorialoc.com</span>
+                <span>contact@rosiesjanitorialoc.com</span>
               </a>
             </div>
             <div className="text-xs sm:text-sm">

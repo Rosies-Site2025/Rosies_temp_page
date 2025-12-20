@@ -47,8 +47,8 @@ export default function RanchoSantaMargaritaPage() {
             <div className="inline-block bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
               Our Hometown
             </div>
-            <h1 className="text-5xl md:text-6xl font-serif-bold text-cyan-900 mb-6">
-              Rancho Santa Margarita's <span className="text-cyan-600">Local Cleaning Experts</span>
+            <h1 className="text-8xl md:text-6xl font-serif-bold text-cyan-900 mb-6">
+              Rancho Santa Margarita's <span className="text-violet-400">Local Cleaning Experts</span>
             </h1>
             <p className="text-xl text-cyan-900 max-w-3xl mx-auto mb-8">
               Based right here in RSM since 2009. We're your neighbors, committed to keeping our community's businesses spotless. Women-owned, family-operated, and dedicated to excellence.
@@ -62,7 +62,7 @@ export default function RanchoSantaMargaritaPage() {
               </a>
               <Link
                 href="/#contact"
-                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-cyan-50 transition-colors"
+                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-violet-50 transition-colors"
               >
                 Get Free Quote
               </Link>
@@ -102,7 +102,7 @@ export default function RanchoSantaMargaritaPage() {
                   <h3 className="text-xl text-cyan-900 font-semibold mb-3">
                     {item.title}
                   </h3>
-                  <p className="text-cyan-600">
+                  <p className="text-violet-400">
                     {item.text}
                   </p>
                 </div>
@@ -161,10 +161,10 @@ function ComprehensiveServicesSection() {
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-cyan-900 mb-6">
             Complete Commercial Cleaning Solutions
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-violet-400 max-w-3xl mx-auto">
             From small offices to large facilities, we provide comprehensive cleaning services tailored to RSM businesses
           </p>
         </div>
@@ -208,21 +208,21 @@ function ServiceBlock({ icon, title, description, features }: any) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5 }}
-      className="bg-slate-50 rounded-3xl p-10 shadow-lg"
+      className="bg-violet-50 rounded-3xl p-10 shadow-lg"
     >
       <div className="flex items-center gap-6 mb-6">
         <div className="w-16 h-16 rounded-full bg-cyan-100 flex items-center justify-center text-3xl">
           {icon}
         </div>
-        <h3 className="text-3xl font-bold text-slate-900">{title}</h3>
+        <h3 className="text-3xl font-bold text-cyan-900">{title}</h3>
       </div>
 
-      <p className="text-lg text-slate-600 mb-8">{description}</p>
+      <p className="text-lg text-violet-400 mb-8">{description}</p>
 
       <ul className="grid sm:grid-cols-2 gap-4">
         {features.map((f: string, i: number) => (
           <li key={i} className="flex gap-3 text-slate-700">
-            <span className="font-bold text-cyan-600">✓</span>
+            <span className="font-bold text-emerald-600">✓</span>
             <span>{f}</span>
           </li>
         ))}
@@ -249,10 +249,10 @@ function LocalRSMAreasSection() {
       <div className="max-w-7xl mx-auto">
 
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6">
+          <h2 className="text-5xl md:text-6xl font-bold text-cyan-900 mb-6">
             Serving Every Corner of RSM
           </h2>
-          <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+          <p className="text-xl text-cyan-600 max-w-3xl mx-auto">
             We know Rancho Santa Margarita inside and out. From the business districts to neighborhood shopping centers, we serve:
           </p>
         </div>
@@ -267,15 +267,15 @@ function LocalRSMAreasSection() {
               transition={{ duration: 0.4, delay: idx * 0.05 }}
               className={`rounded-2xl p-8 shadow-lg ${
                 area.featured
-                  ? 'bg-gradient-to-br from-cyan-500 to-blue-600 text-white'
-                  : 'bg-slate-50 text-slate-900'
+                  ? 'bg-gradient-to-br from-blue-100 to-blue-100 text-white'
+                  : 'bg-violet-50 text-slate-900'
               }`}
             >
-              <div className="text-sm font-semibold mb-3">
+              <div className="text-sm text-violet-400 font-semibold mb-3">
                 {area.zone} RSM
               </div>
-              <h3 className="text-2xl font-bold mb-2">{area.name}</h3>
-              <p className="text-sm opacity-90">{area.businesses}</p>
+              <h3 className="text-2xl text-cyan-900 font-bold mb-2">{area.name}</h3>
+              <p className="text-sm text-cyan-600 opacity-90">{area.businesses}</p>
             </motion.div>
           ))}
         </div>

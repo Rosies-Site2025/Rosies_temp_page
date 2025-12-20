@@ -61,7 +61,7 @@ export default function SanClementePage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="text-5xl md:text-6xl font-bold text-cyan-900 mb-6">
-                Commercial Cleaning for <span className="text-cyan-600">San Clemente</span> Businesses
+                Commercial Cleaning for <span className="text-violet-400">San Clemente</span> Businesses
               </h1>
               <p className="text-xl text-cyan-600 max-w-3xl mx-auto mb-8">
                 Professional janitorial services for San Clemente's vibrant business community. From beachside retail to downtown offices, we keep your coastal business looking its best. Serving 92672, 92673, and 92674.
@@ -75,7 +75,7 @@ export default function SanClementePage() {
                 </a>
                 <Link
                   href="/#contact"
-                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-cyan-50 transition-colors"
+                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-violet-50 transition-colors"
                 >
                   Free Quote
                 </Link>
@@ -91,7 +91,7 @@ export default function SanClementePage() {
               Understanding San Clemente's Unique Environment
             </h2>
             <div className="grid md:grid-cols-2 gap-8">
-              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-xl">
+              <div className="bg-gradient-to-br from-violet-50 to-blue-50 p-8 rounded-xl">
                 <div className="flex justify-center items-center">
     <img
       src="/icons_dana/wave.png"
@@ -111,7 +111,7 @@ export default function SanClementePage() {
                 </ul>
               </div>
 
-              <div className="bg-gradient-to-br from-cyan-50 to-blue-50 p-8 rounded-xl">
+              <div className="bg-gradient-to-br from-violet-50 to-blue-50 p-8 rounded-xl">
                 <div className="flex justify-center items-center">
     <img
       src="/icons_dana/tourism.png"
@@ -135,12 +135,12 @@ export default function SanClementePage() {
         </section>
 
         {/* Business Types We Serve */}
-        <section className="py-16 px-4">
+        <section className="py-16 bg-gradient-to-br from-violet-50 to-blue-50 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold text-cyan-900 text-center mb-4">
+            <h2 className="text-4xl font-bold text-cyan-700 text-center mb-4">
               Serving San Clemente's Diverse Business Mix
             </h2>
-            <p className="text-center text-cyan-600 mb-12 max-w-2xl mx-auto">
+            <p className="text-center text-cyan-900 mb-12 max-w-2xl mx-auto">
               From Del Mar to North Beach, we clean every type of commercial space
             </p>
 
@@ -269,7 +269,7 @@ export default function SanClementePage() {
         </section>
 
         {/* San Clemente Locations */}
-        <section className="py-16 px-4 bg-white">
+        <section className="py-16 bg-white px-4">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-cyan-900 text-center mb-8">
               Complete San Clemente Coverage
@@ -301,9 +301,9 @@ export default function SanClementePage() {
         </section>
 
         {/* Flexible Service */}
-        <section className="py-16 px-4">
+        <section className="py-16 bg-gradient-to-br from-violet-50 to-blue-50 px-4">
           <div className="max-w-4xl mx-auto">
-            <div className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white p-8 md:p-12 rounded-2xl shadow-xl">
+            <div className="bg-gradient-to-r from-violet-300 to-blue-600 text-white p-8 md:p-12 rounded-2xl shadow-xl">
               <h2 className="text-3xl font-serif mb-6 text-center">
                 Flexible Scheduling for Your Business Hours
               </h2>
@@ -385,7 +385,7 @@ export default function SanClementePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+19496878297"
-                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-100 transition-colors"
+                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-violet-50 transition-colors"
               >
                 Call (949) 687-8297
               </a>

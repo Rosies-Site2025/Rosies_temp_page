@@ -75,9 +75,9 @@ function WaveHeroSection() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="text-5xl md:text-8xl font-serif-bold text-cyan-900 mb-6"
+            className="text-8xl md:text-8xl font-serif-bold text-cyan-900 mb-6"
           >
-            <span className="text-cyan-600">Dana Point Harbor</span> Commercial Cleaning
+            <span className="text-violet-400">Dana Point Harbor</span> Commercial Cleaning
           </motion.h1>
           
           <motion.p 
@@ -109,7 +109,7 @@ function WaveHeroSection() {
             >
               <Link
                 href="/#contact"
-                className="inline-block bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-cyan-50 transition-colors shadow-lg"
+                className="inline-block bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-violet-50 transition-colors shadow-lg"
               >
                 Request Quote
               </Link>
@@ -171,7 +171,7 @@ function WaterfrontSpecialistsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.7 }}
-          className="text-4xl font-serif-bold text-cyan-600 text-center mb-12"
+          className="text-4xl font-serif-bold text-cyan-500 text-center mb-12"
         >
           Waterfront Business Cleaning Specialists
         </motion.h2>
@@ -206,7 +206,7 @@ function WaterfrontCard({ card, index }: any) {
     <motion.div
       ref={ref}
       style={{ x, opacity }}
-      className="bg-gradient-to-br from-blue-50 to-cyan-50 p-8 rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-500"
+      className="bg-gradient-to-br from-violet-50 to-blue-50 p-8 rounded-xl shadow-md hover:shadow-2xl transition-shadow duration-500"
     >
       <div className="mb-4 flex justify-center">
         <motion.img
@@ -364,7 +364,7 @@ function BusinessSolutionCard({ business, index }: any) {
     <motion.div
       ref={ref}
       style={{ scale, opacity }}
-      className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-cyan-600 hover:shadow-2xl transition-shadow duration-500"
+      className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-violet-300 hover:shadow-2xl transition-shadow duration-500"
     >
       <div className="flex items-start gap-4">
         <motion.div
@@ -455,7 +455,7 @@ function CoverageSection() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-4xl font-serif text-cyan-900 text-center mb-8"
+          className="text-4xl font-serif text-violet-400 text-center mb-8"
         >
           Complete Dana Point Coverage
         </motion.h2>

@@ -60,8 +60,8 @@ export default function SanJuanCapistranoPage() {
         <section className="pt-32 pb-16 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h1 className="text-5xl md:text-6xl font-bold text-cyan-900 mb-6">
-                Commercial Cleaning in <span className="text-cyan-600">San Juan Capistrano</span>
+              <h1 className="text-5xl md:text-8xl font-bold text-cyan-900 mb-6">
+                Commercial Cleaning in <span className="text-violet-400">San Juan Capistrano</span>
               </h1>
               <p className="text-xl text-cyan-600 max-w-3xl mx-auto mb-8">
                 Caring for San Juan Capistrano's unique business community with personalized janitorial services. From historic downtown to modern business centers, we're committed to helping local businesses thrive. Serving 92675 and 92693.
@@ -140,7 +140,7 @@ export default function SanJuanCapistranoPage() {
         {/* Historic Downtown Expertise */}
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
-            <div className="bg-gradient-to-br from-white-50 to-cyan-50 p-8 md:p-12 rounded-2xl shadow-lg">
+            <div className="bg-gradient-to-br from-violet-50 to-cyan-50 p-8 md:p-12 rounded-2xl shadow-lg">
               <h2 className="text-3xl font-bold text-cyan-900 mb-6 text-center">
                 Caring for Historic Downtown Businesses
               </h2>
@@ -359,7 +359,7 @@ export default function SanJuanCapistranoPage() {
 
 
         {/* San Juan Capistrano Areas */}
-        <section className="py-16 px-4">
+        <section className="py-16 px-4 bg-gradient-to-br from-violet-50 to-cyan-50">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-4xl font-bold text-cyan-900 text-center mb-8">
               Serving All of San Juan Capistrano
@@ -395,7 +395,7 @@ export default function SanJuanCapistranoPage() {
   style={{ backgroundImage: "url('/images/community-bg.jpg')" }}
 >
   <div className="max-w-4xl mx-auto">
-    <div className="bg-gradient-to-br from-white-100 to-cyan-100 text-cyan-900 p-8 md:p-12 rounded-2xl shadow-xl text-center">
+    <div className="bg-gradient-to-br from-violet-100 to-cyan-100 text-cyan-900 p-8 md:p-12 rounded-2xl shadow-xl text-center">
       <h2 className="text-3xl font-serif-bold mb-6">
         Women-Owned, Community-Focused
       </h2>
@@ -444,7 +444,7 @@ export default function SanJuanCapistranoPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
   <a
     href="tel:+19496878297"
-    className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-100 transition-colors"
+    className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-violet-50 transition-colors"
   >
     Call Now{" "}
     <span className="pulse-number">(949) 687-8297</span>

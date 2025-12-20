@@ -62,7 +62,7 @@ function ServiceCard({ service, index }: { service: any; index: number }) {
 
         <h2 className="text-4xl md:text-5xl font-bold text-cyan-900 mb-4 relative inline-block">
           {service.title}
-          <span className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-cyan-500 to-blue-500" />
+          <span className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-violet-400 to-violet-100" />
         </h2>
 
         <p className="text-lg text-cyan-600 mb-8 leading-relaxed">
@@ -196,10 +196,10 @@ export default function ServicesPage() {
       <Navigation />
 
       <section className="pt-32 pb-20 text-center">
-        <h1 className="text-6xl md:text-7xl font-bold text-cyan-900 mb-6">
+        <h1 className="text-6xl md:text-8xl font-bold text-cyan-900 mb-6">
           Our Services
         </h1>
-        <p className="text-xl text-cyan-600 max-w-3xl mx-auto">
+        <p className="text-xl text-violet-400 max-w-3xl mx-auto">
           Comprehensive commercial cleaning solutions tailored to your facility's unique needs
         </p>
       </section>

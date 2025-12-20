@@ -60,8 +60,8 @@ export default function LakeForestPage() {
         <section className="pt-32 pb-16 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h1 className="text-5xl md:text-6xl font-serif-bold text-cyan-900 mb-6">
-                <span className="text-cyan-600">Corporate Cleaning</span> for Lake Forest Business Parks
+              <h1 className="text-8xl md:text-6xl font-serif-bold text-cyan-900 mb-6">
+                <span className="text-violet-400">Corporate Cleaning</span> for Lake Forest Business Parks
               </h1>
               <p className="text-xl text-cyan-600 max-w-3xl mx-auto mb-8">
                 Specialized janitorial services for Lake Forest's thriving business community. Expert care for multi-tenant buildings, office complexes, and corporate facilities throughout the 92630 area.
@@ -75,7 +75,7 @@ export default function LakeForestPage() {
                 </a>
                 <Link
                   href="/#contact"
-                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-cyan-50 transition-colors"
+                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-violet-50 transition-colors"
                 >
                   Request Site Assessment
                 </Link>
@@ -156,33 +156,33 @@ export default function LakeForestPage() {
         {/* Services Tailored for Corporate */}
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-serif text-cyan-900 text-center mb-12">
+            <h2 className="text-4xl font-serif text-violet-400 text-center mb-12">
               Comprehensive Corporate Cleaning Solutions
             </h2>
             
             <div className="space-y-6">
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-600">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-violet-300">
                 <h3 className="text-xl font-semibold mb-3 text-cyan-900">Building Lobbies & Common Areas</h3>
                 <p className="text-cyan-600">
                   First impressions matter. We maintain pristine lobbies, hallways, elevators, and shared spaces that reflect your property's professional image. Daily touch-point cleaning, floor care, and attention to high-traffic areas.
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-600">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-violet-300">
                 <h3 className="text-xl font-semibold mb-3 text-cyan-900">Executive Suites & Conference Rooms</h3>
                 <p className="text-cyan-600">
                   White-glove service for your most important spaces. Thorough dusting, furniture polishing, glass cleaning, and careful attention to details that matter in professional settings. Flexible scheduling to avoid business disruption.
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-600">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-violet-300">
                 <h3 className="text-xl font-semibold mb-3 text-cyan-900">Commercial Floor Care Programs</h3>
                 <p className="text-cyan-600">
                   Protect your flooring investment with professional maintenance. Carpet extraction and spot treatment, VCT stripping and waxing, tile and grout deep cleaning, and preventative maintenance programs designed for high-traffic corporate environments.
                 </p>
               </div>
 
-              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-cyan-600">
+              <div className="bg-white p-6 rounded-lg shadow-md border-l-4 border-violet-300">
                 <h3 className="text-xl font-semibold mb-3 text-cyan-900">Day Porter Services</h3>
                 <p className="text-cyan-600">
                   On-site support during business hours. Immediate response to spills and issues, restroom monitoring and restocking, conference room turnover, and a professional presence that keeps your facility running smoothly all day long.
@@ -201,7 +201,7 @@ export default function LakeForestPage() {
             <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto mb-8">
               <div className="bg-cyan-50 p-6 rounded-lg">
                 <h3 className="font-semibold mb-3 text-cyan-900 text-lg">Key Locations:</h3>
-                <ul className="space-y-2 text-cyan-700">
+                <ul className="space-y-2 text-violet-400">
                   <li>• Lake Forest Gateway</li>
                   <li>• El Toro Road Business Corridor</li>
                   <li>• Portola Center</li>
@@ -211,7 +211,7 @@ export default function LakeForestPage() {
               </div>
               <div className="bg-cyan-50 p-6 rounded-lg">
                 <h3 className="font-semibold mb-3 text-cyan-900 text-lg">Facility Types:</h3>
-                <ul className="space-y-2 text-cyan-700">
+                <ul className="space-y-2 text-violet-400">
                   <li>• Class A Office Buildings</li>
                   <li>• Multi-Tenant Business Parks</li>
                   <li>• Medical Office Buildings</li>
@@ -220,7 +220,7 @@ export default function LakeForestPage() {
                 </ul>
               </div>
             </div>
-            <p className="text-center text-bold text-cyan-600">
+            <p className="text-center text-bold text-violet-400">
               Complete coverage throughout the 92630 zip code
             </p>
           </div>
@@ -294,7 +294,7 @@ export default function LakeForestPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+19496878297"
-                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-100 transition-colors"
+                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-violet-50 transition-colors"
               >
                 Call (949) 687-8297
               </a>

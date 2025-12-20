@@ -155,14 +155,14 @@ function EnhancedServiceAreasSection() {
       slug: "rancho-santa-margarita",
       zip: "92688",
       description: "Comprehensive cleaning for RSM's business districts",
-      color: "from-cyan-500 to-blue-500"
+      color: "from-violet-200 to-blue-500"
     },
     {
       name: "Mission Viejo",
       slug: "mission-viejo",
       zip: "92691, 92692, 92694",
       description: "Serving all Mission Viejo commercial properties",
-      color: "from-blue-500 to-indigo-500"
+      color: "from-violet-200 to-indigo-500"
     },
     {
       name: "Aliso Viejo",
@@ -190,7 +190,7 @@ function EnhancedServiceAreasSection() {
       slug: "san-juan-capistrano",
       zip: "92675, 92693",
       description: "Historic downtown and business park cleaning",
-      color: "from-rose-500 to-orange-500"
+      color: "from-rose-500 to-violete-500"
     },
     {
       name: "Ladera Ranch",
@@ -234,7 +234,7 @@ function EnhancedServiceAreasSection() {
             <span className="relative inline-block">
               Service Areas
               <motion.div
-                className="absolute -bottom-2 left-0 right-0 h-3 bg-gradient-to-r from-cyan-400 to-blue-400 -z-10"
+                className="absolute -bottom-2 left-0 right-0 h-3 bg-gradient-to-r from-violet-400 to-violet-100 -z-10"
                 initial={{ scaleX: 0 }}
                 whileInView={{ scaleX: 1 }}
                 viewport={{ once: true }}
@@ -339,7 +339,7 @@ function ServiceAreaCard({ area, index }: { area: any; index: number }) {
 
           {/* Glow Effect */}
           <motion.div
-            className="absolute -bottom-10 -right-10 w-40 h-40 bg-gradient-to-br from-cyan-400/30 to-blue-400/30 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+            className="absolute -bottom-10 -right-10 w-40 h-40 bg-gradient-to-br from-violet-100/30 to-blue-400/30 rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"
           />
         </motion.div>
       </Link>

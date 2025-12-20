@@ -134,7 +134,7 @@ export default function AboutSection() {
                 <span className="relative inline-block">
                   Commercial Cleaning
                   <motion.div
-                    className="absolute -bottom-1 left-0 right-0 h-2 bg-cyan-400/50 -z-10"
+                    className="absolute -bottom-1 left-0 right-0 h-2 bg-violet-400/50 -z-10"
                     initial={{ scaleX: 0 }}
                     whileInView={{ scaleX: 1 }}
                     viewport={{ once: true }}
@@ -190,7 +190,7 @@ export default function AboutSection() {
               <span className="relative inline-block">
                 Values
                 <motion.div
-                  className="absolute -bottom-1 left-0 right-0 h-2 bg-cyan-400/50 -z-10"
+                  className="absolute -bottom-1 left-0 right-0 h-2 bg-violet-400/50 -z-10"
                   initial={{ scaleX: 0 }}
                   whileInView={{ scaleX: 1 }}
                   viewport={{ once: true }}

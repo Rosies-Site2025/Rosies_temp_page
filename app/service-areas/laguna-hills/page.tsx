@@ -63,8 +63,8 @@ export default function LagunaHillsPage() {
               <div className="inline-block bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
                 Healthcare Cleaning Specialists
               </div>
-              <h1 className="text-5xl md:text-6xl font-serif-bold text-cyan-900 mb-6">
-                <span className="text-cyan-600">Medical Facility Cleaning</span> in Laguna Hills
+              <h1 className="text-8xl md:text-6xl font-serif-bold text-cyan-900 mb-6">
+                <span className="text-violet-400">Medical Facility Cleaning</span> in Laguna Hills
               </h1>
               <p className="text-xl text-cyan-600 max-w-3xl mx-auto mb-8">
                 Trusted by Laguna Hills healthcare providers for infection-control focused cleaning. OSHA-compliant protocols, medical-grade disinfection, and staff trained in healthcare facility standards for the 92653 area.
@@ -78,7 +78,7 @@ export default function LagunaHillsPage() {
                 </a>
                 <Link
                   href="/#contact"
-                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-cyan-50 transition-colors"
+                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-violet-50 transition-colors"
                 >
                   Request Healthcare Quote
                 </Link>
@@ -145,7 +145,7 @@ export default function LagunaHillsPage() {
             </h2>
             
             <div className="grid md:grid-cols-2 gap-6">
-              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-cyan-600">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-violet-300">
                 <h3 className="text-xl text-cyan-900 font-semibold mb-3 flex items-center gap-2">
                   <div className="flex justify-center items-center">
     <img
@@ -180,7 +180,7 @@ export default function LagunaHillsPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-cyan-600">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-violet-300">
                 <h3 className="text-xl text-cyan-900 font-semibold mb-3 flex items-center gap-2">
                   <div className="flex justify-center items-center">
     <img
@@ -215,7 +215,7 @@ export default function LagunaHillsPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-cyan-600">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-violet-300">
                 <h3 className="text-xl font-semibold text-cyan-900 mb-3 flex items-center gap-2">
                   <div className="flex justify-center items-center">
     <img
@@ -250,7 +250,7 @@ export default function LagunaHillsPage() {
                 </ul>
               </div>
 
-              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-cyan-600">
+              <div className="bg-white p-6 rounded-xl shadow-lg border-l-4 border-violet-300">
                 <h3 className="text-xl font-semibold text-cyan-900 mb-3 flex items-center gap-2">
                   <div className="flex justify-center items-center">
     <img
@@ -291,7 +291,7 @@ export default function LagunaHillsPage() {
         {/* Special Healthcare Protocols */}
         <section className="py-16 px-4 bg-white">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-serif-bold text-cyan-900 text-center mb-8">
+            <h2 className="text-3xl font-serif-bold text-violet-400 text-center mb-8">
               Our Healthcare Facility Protocols
             </h2>
             <div className="bg-gradient-to-br from-cyan-50 to-cyan-50 p-8 rounded-xl">
@@ -340,7 +340,7 @@ export default function LagunaHillsPage() {
         {/* Laguna Hills Areas */}
         <section className="py-16 px-4">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-serif text-cyan-900 text-center mb-8">
+            <h2 className="text-4xl font-serif text-violet-400 text-center mb-8">
               Serving Laguna Hills Healthcare Community
             </h2>
             <div className="bg-white p-8 rounded-xl shadow-lg max-w-3xl mx-auto">
@@ -436,7 +436,7 @@ export default function LagunaHillsPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+19496878297"
-                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-100 transition-colors"
+                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-violet-50 transition-colors"
               >
                 Call (949) 687-8297
               </a>

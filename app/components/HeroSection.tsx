@@ -75,7 +75,7 @@ export default function HeroSection() {
             Women-Owned Professional Cleaning
           </div>
 
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-cyan-900 mb-6">
+          <h1 className="text-5xl md:text-6xl lg:text-8xl font-bold text-cyan-900 mb-6">
             Commercial Cleaning
             <span
               className="block !text-violet-300"

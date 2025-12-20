@@ -152,8 +152,8 @@ function HeroSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-12"
         >
-          <h1 className="text-5xl md:text-7xl font-serif-bold text-cyan-900 mb-6">
-            Commercial Cleaning for <span className="text-cyan-600">Modern Aliso Viejo Businesses</span>
+          <h1 className="text-8xl md:text-7xl font-serif-bold text-cyan-900 mb-6">
+            Commercial Cleaning for <span className="text-violet-400">Modern Aliso Viejo Businesses</span>
           </h1>
           <p className="text-xl text-cyan-600 max-w-3xl mx-auto mb-8">
             Flexible, eco-conscious janitorial services designed for today's workplace. Supporting Aliso Viejo's innovative companies with cleaning solutions that adapt to your schedule, values, and space.
@@ -172,7 +172,7 @@ function HeroSection() {
             </a>
             <Link
               href="/#contact"
-              className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-cyan-50 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transform duration-300"
+              className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-violet-50 transition-colors shadow-lg hover:shadow-xl hover:scale-105 transform duration-300"
             >
               Custom Quote
             </Link>
@@ -487,7 +487,7 @@ function AlisoViejoLocationsSection() {
           style={{ opacity, y }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl font-serif text-cyan-900 text-center mb-8">
+          <h2 className="text-4xl font-serif text-violet-400 text-center mb-8">
             Serving All of Aliso Viejo
           </h2>
           <div className="bg-gradient-to-br from-cyan-50 via-blue-50 to-cyan-50 p-10 rounded-2xl max-w-3xl mx-auto shadow-xl border-2 border-cyan-100">
@@ -623,7 +623,7 @@ function CTASection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
               whileHover={{ scale: 1.05 }}
-              className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-100 transition-colors shadow-lg"
+              className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-violet-50 transition-colors shadow-lg"
             >
               Call (949) 687-8297
             </motion.a>
@@ -647,57 +647,3 @@ function CTASection() {
   );
 }
 
-
-// ========================================
-// IMPLEMENTATION NOTES
-// ========================================
-/*
-
-📋 INSTALLATION:
-npm install motion
-
-⚠️ METADATA SETUP:
-Create app/service-areas/aliso-viejo/layout.tsx
-Copy the metadata from the comment at the top of this file
-
-✅ WHAT WAS ENHANCED:
-1. Hero Section - Fade-in animation, hover effects on buttons
-2. Modern Workplace Cards - Scroll-triggered fade-in, hover scale
-3. Business Types Cards - Slide-in from right, staggered features
-4. Locations Section - Fade-in with glassmorphism cards
-5. Why Choose Us - Scale animation
-6. CTA Section - Staggered button animations
-
-🎨 ALL PRESERVED:
-✓ All original images (icons_dana/*)
-✓ All original content and text
-✓ All SEO structure
-✓ Breadcrumbs UNCHANGED
-✓ All branding intact
-
-📝 UPDATE NOTES:
-
-TO UPDATE IMAGES:
-1. Modern Workplace Section:
-   - Edit modernWorkplaceCards array (line ~125)
-   - Change imageSrc: "/icons_dana/yourimage.png"
-
-2. Business Types Section:
-   - Edit businessTypes array (line ~243)
-   - Change imageSrc: "/icons_dana/yourimage.png"
-
-TO UPDATE TEXT:
-- All text is in the component arrays
-- Edit the title, description, or features arrays
-
-TO ADJUST ANIMATIONS:
-- Speed: Change duration values (currently 0.5-0.8)
-- Delays: Change delay values (currently 0.1-0.3 increments)
-- Distance: Change y/x values in transforms
-
-🚀 PERFORMANCE:
-- GPU-accelerated animations
-- Respects prefers-reduced-motion
-- Smooth 60fps scroll effects
-
-*/

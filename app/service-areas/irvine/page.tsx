@@ -35,7 +35,7 @@ export default function IrvinePage() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
               <h1 className="text-5xl md:text-6xl font-serif-bold text-cyan-900 mb-6">
-                Commercial Cleaning in <span className="text-cyan-600">Irvine</span>
+                Commercial Cleaning in <span className="text-violet-400">Irvine</span>
               </h1>
               <p className="text-xl text-cyan-600 max-w-3xl mx-auto mb-8">
                 Professional janitorial services for Irvine businesses. From Irvine Business Complex to Spectrum Center, we serve all Irvine areas. Women-owned, licensed and insured.
@@ -49,7 +49,7 @@ export default function IrvinePage() {
                 </a>
                 <Link
                   href="/#contact"
-                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-cyan-50 transition-colors"
+                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-violet-50 transition-colors"
                 >
                   Get Free Quote
                 </Link>
@@ -282,7 +282,7 @@ export default function IrvinePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+19496878297"
-                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-100 transition-colors"
+                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-violet-100 transition-colors"
               >
                 Call (949) 687-8297
               </a>

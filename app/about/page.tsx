@@ -17,7 +17,7 @@ export default function AboutPage() {
   src="/icons_dana/woman.png"
   alt="About Icon"
   className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 object-contain"
-/>              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-cyan-900 leading-tight">
+/>              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-8xl font-bold text-cyan-900 leading-tight">
                 About Rosie's Janitorial Services
               </h1>
             </div>

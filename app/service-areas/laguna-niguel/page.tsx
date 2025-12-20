@@ -66,8 +66,8 @@ export default function LagunaNiguelPage() {
         <section className="pt-32 pb-16 px-4">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">
-              <h1 className="text-5xl md:text-7xl font-serif-bold text-cyan-900 mb-6">
-                Commercial Cleaning in <span className="text-cyan-600">Laguna Niguel</span>
+              <h1 className="text-8xl md:text-7xl font-serif-bold text-cyan-900 mb-6">
+                Commercial Cleaning in <span className="text-violet-400">Laguna Niguel</span>
               </h1>
               <p className="text-xl text-cyan-600 max-w-3xl mx-auto mb-8">
                 Professional janitorial services for Laguna Niguel businesses. Women-owned, licensed & insured. Serving the 92677 area with exceptional commercial cleaning.
@@ -81,7 +81,7 @@ export default function LagunaNiguelPage() {
                 </a>
                 <Link
                   href="/#contact"
-                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-cyan-50 transition-colors"
+                  className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-violet-50 transition-colors"
                 >
                   Get Free Quote
                 </Link>
@@ -235,7 +235,7 @@ export default function LagunaNiguelPage() {
               <p className="text-lg text-cyan-600 mb-6">
                 We provide commercial cleaning services throughout Laguna Niguel including:
               </p>
-              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-cyan-900">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-violet-400">
                 <div>Crown Valley</div>
                 <div>Aliso Creek</div>
                 <div>Beacon Hill</div>
@@ -259,7 +259,7 @@ export default function LagunaNiguelPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
                 href="tel:+19496878297"
-                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-100 transition-colors"
+                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-violet-50 transition-colors"
               >
                 Call (949) 687-8297
               </a>

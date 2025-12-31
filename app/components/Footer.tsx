@@ -123,7 +123,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-800 pt-8">
           <div className="flex flex-col md:flex-row justify-between text-white items-center gap-4 text-sm">
-            <p>&copy; {currentYear} Rosie's Janitorial Services, LLC. All rights reserved.</p>
+            <p>&copy; {currentYear} Rosie's Janitorial Services, LLC. All rights reserved. | Designed by <a href="https://codevostudio.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">CodevoStudio</a></p>
             <div className="flex gap-6">
               <Link href="/privacy-policy" className="hover:text-cyan-400 transition-colors">
                 Privacy Policy

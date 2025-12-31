@@ -38,48 +38,80 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.7,
     },
 
-    // Services
+    // Service areas (local SEO money pages)
     {
-      url: `${baseUrl}/services/office-cleaning`,
+      url: `${baseUrl}/service-areas/rancho-santa-margarita`,
+      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/retail-cleaning`,
+      url: `${baseUrl}/service-areas/irvine`,
+      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/restaurant-cleaning`,
+      url: `${baseUrl}/service-areas/mission-viejo`,
+      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/services/medical-cleaning`,
+      url: `${baseUrl}/service-areas/laguna-niguel`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/service-areas/lake-forest`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/service-areas/aliso-viejo`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/service-areas/laguna-hills`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/service-areas/san-clemente`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/service-areas/dana-point`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/service-areas/san-juan-capistrano`,
+      lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
 
-    // Service areas (local SEO money pages)
+    // Legal pages
     {
-      url: `${baseUrl}/service-areas/laguna-niguel`,
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
     {
-      url: `${baseUrl}/service-areas/san-clemente`,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/service-areas/rancho-santa-margarita`,
-      changeFrequency: 'monthly',
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/service-areas/mission-viejo`,
-      changeFrequency: 'monthly',
-      priority: 0.7,
+      url: `${baseUrl}/terms`,
+      lastModified: new Date(),
+      changeFrequency: 'yearly',
+      priority: 0.3,
     },
   ];
 }

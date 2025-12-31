@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     url: 'https://rosiesjanitorialoc.com/service-areas/mission-viejo',
   },
   alternates: {
-    canonical: 'https://rosiesjanitorialoc.com/service-areas/mission-viejo',
+    canonical: 'https://www.rosiesjanitorialoc.com/service-areas/mission-viejo',
   },
 };
 

@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: 'https://rosiesjanitorialoc.com/service-areas/san-clemente',
   },
   alternates: {
-    canonical: 'https://rosiesjanitorialoc.com/service-areas/san-clemente',
+    canonical: 'https://www.rosiesjanitorialoc.com/service-areas/san-clemente',
   },
 };
 

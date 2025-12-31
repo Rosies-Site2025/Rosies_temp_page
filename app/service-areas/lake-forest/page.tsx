@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: 'https://rosiesjanitorialoc.com/service-areas/lake-forest',
   },
   alternates: {
-    canonical: 'https://rosiesjanitorialoc.com/service-areas/lake-forest',
+    canonical: 'https://www.rosiesjanitorialoc.com/service-areas/lake-forest',
   },
 };
 

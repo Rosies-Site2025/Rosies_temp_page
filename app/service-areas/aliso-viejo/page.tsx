@@ -34,7 +34,7 @@ export const metadata: Metadata = {
     url: 'https://rosiesjanitorialoc.com/service-areas/aliso-viejo',
   },
   alternates: {
-    canonical: 'https://rosiesjanitorialoc.com/service-areas/aliso-viejo',
+    canonical: 'https://www.rosiesjanitorialoc.com/service-areas/aliso-viejo',
   },
 };
 

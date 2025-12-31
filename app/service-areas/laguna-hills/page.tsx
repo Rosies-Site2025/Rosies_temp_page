@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: 'https://rosiesjanitorialoc.com/service-areas/laguna-hills',
   },
   alternates: {
-    canonical: 'https://rosiesjanitorialoc.com/service-areas/laguna-hills',
+    canonical: 'https://www.rosiesjanitorialoc.com/service-areas/laguna-hills',
   },
 };
 

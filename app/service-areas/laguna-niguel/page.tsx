@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     url: 'https://rosiesjanitorialoc.com/service-areas/laguna-niguel',
   },
   alternates: {
-    canonical: 'https://rosiesjanitorialoc.com/service-areas/laguna-niguel',
+    canonical: 'https://www.rosiesjanitorialoc.com/service-areas/laguna-niguel',
   },
 };
 

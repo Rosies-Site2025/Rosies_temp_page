@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: 'https://rosiesjanitorialoc.com/service-areas/san-juan-capistrano',
   },
   alternates: {
-    canonical: 'https://rosiesjanitorialoc.com/service-areas/san-juan-capistrano',
+    canonical: 'https://www.rosiesjanitorialoc.com/service-areas/san-juan-capistrano',
   },
 };
 

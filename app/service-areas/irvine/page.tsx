@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     url: 'https://rosiesjanitorialoc.com/service-areas/irvine',
   },
   alternates: {
-    canonical: 'https://rosiesjanitorialoc.com/service-areas/irvine',
+    canonical: 'https://www.rosiesjanitorialoc.com/service-areas/irvine',
   },
 };
 

@@ -34,8 +34,8 @@ export async function POST(request: Request) {
     }
 
     await resend.emails.send({
-      from: 'contact@rosiesjanitorialoc.com',
-      to: 'fatimaespinoza4@gmail.com',
+      from: process.env.RESEND_FROM_EMAIL || 'contact@rosiesjanitorialoc.com',
+      to: process.env.RESEND_TO_EMAIL || 'fatimaespinoza4@gmail.com',
       replyTo: email,
       subject: `New Quote Request from ${name}`,
       html: `<!DOCTYPE html>...${message}...`

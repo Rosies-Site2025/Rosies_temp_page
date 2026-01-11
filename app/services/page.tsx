@@ -1,220 +1,103 @@
-'use client';
-
-import { useRef } from 'react';
+import type { Metadata } from 'next';
+import Link from 'next/link';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
-import { CheckCircle, ArrowRight } from 'lucide-react';
-import Link from 'next/link';
-import {
-  GiFloorPolisher,
-  GiMagicBroom,
-  GiShop,
-} from "react-icons/gi";
-import { MdOutlineCleanHands, MdOutlineCompost } from "react-icons/md";
-import { PiBuildings } from "react-icons/pi";
-import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
-function ServiceCard({ service, index }: { service: any; index: number }) {
-  const isReversed = index % 2 === 1;
-
-  return (
-    <motion.div
-      id={service.id}
-      className="grid lg:grid-cols-2 gap-12 items-center relative will-change-transform"
-      initial={{ opacity: 0, y: 40 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-120px" }}
-      transition={{ duration: 0.6, ease: "easeOut" }}
-    >
-      <div className="absolute inset-0 bg-gradient-to-r from-cyan-50/50 to-transparent rounded-3xl -z-10" />
-
-      {/* IMAGE */}
-      <motion.div
-        className={`relative ${isReversed ? 'lg:order-2' : ''}`}
-        initial={{ x: isReversed ? 60 : -60, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true, margin: "-120px" }}
-        transition={{ duration: 0.6, ease: "easeOut" }}
-      >
-        <div className="relative rounded-2xl overflow-hidden shadow-lg">
-          <img
-            src={service.image}
-            alt={service.title}
-            className="w-full h-96 object-cover"
-            loading="lazy"
-            decoding="async"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-cyan-900/30 to-transparent" />
-        </div>
-      </motion.div>
-
-      {/* CONTENT */}
-      <motion.div
-        className={`${isReversed ? 'lg:order-1' : ''}`}
-        initial={{ x: isReversed ? -60 : 60, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        viewport={{ once: true, margin: "-120px" }}
-        transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-      >
-        <div className="w-20 h-20 bg-gradient-to-br from-cyan-100 to-blue-100 rounded-2xl flex items-center justify-center mb-6 shadow-md">
-          <service.icon className="text-cyan-900" size={40} />
-        </div>
-
-        <h2 className="text-4xl md:text-5xl font-bold text-cyan-900 mb-4 relative inline-block">
-          {service.title}
-          <span className="absolute bottom-0 left-0 h-1 w-full bg-gradient-to-r from-violet-400 to-violet-100" />
-        </h2>
-
-        <p className="text-lg text-cyan-600 mb-8 leading-relaxed">
-          {service.description}
-        </p>
-
-        <ul className="space-y-4 mb-8">
-          {service.features.map((feature: string, idx: number) => (
-            <motion.li
-              key={idx}
-              className="flex items-start gap-3"
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.06 }}
-            >
-              <CheckCircle className="text-emerald-600 mt-1" size={22} />
-              <span className="text-cyan-900">{feature}</span>
-            </motion.li>
-          ))}
-        </ul>
-
-        <Link
-          href="/contact"
-          className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white rounded-xl font-semibold transition-all duration-300 shadow-lg"
-        >
-          Get a Quote
-          <ArrowRight size={20} />
-        </Link>
-      </motion.div>
-    </motion.div>
-  );
-}
+export const metadata: Metadata = {
+  title: "Commercial Cleaning Services | Rosie's Janitorial",
+  description: "Professional commercial cleaning services: office cleaning, floor care, medical facility cleaning, retail cleaning, and more. Serving Orange County.",
+};
 
 export default function ServicesPage() {
   const services = [
     {
-      id: 'office',
-      icon: PiBuildings,
       title: "Office Cleaning",
-      image: "/services/office_cleaning.png",
-      description: "Comprehensive office cleaning services designed to create a healthy, productive workspace for your team.",
-      features: [
-        "Desk and workstation cleaning and sanitization",
-        "Common area and break room maintenance",
-        "Restroom deep cleaning and restocking",
-        "Conference room setup and cleaning",
-        "Reception area maintenance",
-        "Waste removal and recycling"
-      ]
+      desc: "Complete office maintenance including workstations, common areas, restrooms, and break rooms. Daily, weekly, or custom schedules available.",
+      details: ["Desk and surface cleaning", "Restroom sanitization", "Break room maintenance", "Trash removal", "Vacuum and mopping"]
     },
     {
-      id: 'floor',
-      icon: GiFloorPolisher,
-      title: "Floor Care Services",
-      image: "/icons_dana/floor-care.jpeg",
-      description: "Professional floor maintenance to keep your surfaces looking their best and lasting longer.",
-      features: [
-        "Carpet cleaning and stain removal",
-        "Hard floor stripping and waxing",
-        "Floor buffing and polishing",
-        "Tile and grout cleaning",
-        "VCT maintenance",
-        "Concrete floor care"
-      ]
+      title: "Floor Care",
+      desc: "Professional floor maintenance for all surface types. Keep your floors looking their best with our comprehensive care programs.",
+      details: ["Carpet cleaning and extraction", "VCT stripping and waxing", "Tile and grout cleaning", "Hard surface buffing", "Concrete polishing"]
     },
     {
-      id: 'disinfection',
-      icon: MdOutlineCleanHands,
-      title: "Disinfection Services",
-      image: "/services/disinfection.png",
-      description: "Hospital-grade disinfection services to protect your employees and customers from harmful pathogens.",
-      features: [
-        "EPA-approved disinfectants",
-        "High-touch surface sanitization",
-        "Electrostatic spraying available",
-        "COVID-19 disinfection protocols",
-        "Healthcare facility cleaning",
-        "Regular sanitization schedules"
-      ]
+      title: "Medical Facility Cleaning",
+      desc: "OSHA and HIPAA-compliant cleaning for healthcare environments. Specialized protocols for medical offices, dental practices, and clinics.",
+      details: ["Hospital-grade disinfection", "Biohazard protocols", "Exam room cleaning", "Waiting area maintenance", "Compliance documentation"]
     },
     {
-      id: 'porter',
-      icon: GiMagicBroom,
-      title: "Day Porter Services",
-      image: "/services/day-porter.png",
-      description: "On-site staff during business hours to maintain cleanliness and address needs as they arise.",
-      features: [
-        "Real-time cleaning response",
-        "Restroom monitoring and maintenance",
-        "Lobby and entrance upkeep",
-        "Meeting room turnover",
-        "Spill response",
-        "Customer-facing area maintenance"
-      ]
-    },
-    {
-      id: 'retail',
-      icon: GiShop,
       title: "Retail Cleaning",
-      image: "/services/retail-cleaning.png",
-      description: "Specialized cleaning for retail spaces that keeps your store inviting and customer-ready.",
-      features: [
-        "Sales floor maintenance",
-        "Fitting room cleaning",
-        "Display and fixture dusting",
-        "Window and glass cleaning",
-        "After-hours deep cleaning",
-        "Customer restroom care"
-      ]
+      desc: "Keep your customer-facing spaces spotless and inviting. We understand retail's unique needs and scheduling requirements.",
+      details: ["Store front cleaning", "Display area dusting", "Fitting room maintenance", "Back room organization", "After-hours service"]
     },
     {
-      id: 'green',
-      icon: MdOutlineCompost,
+      title: "Day Porter Services",
+      desc: "On-site staff for continuous maintenance throughout business hours. Ideal for high-traffic facilities requiring constant attention.",
+      details: ["Real-time cleaning", "Restroom monitoring", "Common area upkeep", "Spill response", "Lobby maintenance"]
+    },
+    {
       title: "Green Cleaning",
-      image: "/services/green-cleaning.png",
-      description: "Eco-friendly cleaning solutions that are effective, safe, and better for the environment.",
-      features: [
-        "Non-toxic cleaning products",
-        "Eco-friendly equipment",
-        "Green cleaning certifications",
-        "Sustainable practices",
-        "Indoor air quality focus",
-        "Environmentally responsible disposal"
-      ]
+      desc: "Eco-friendly cleaning solutions that are safe for your team, customers, and the environment without compromising effectiveness.",
+      details: ["EPA-approved products", "Reduced chemical exposure", "Sustainable practices", "LEED compliance support", "Green certification"]
     }
   ];
 
   return (
-    <main className="min-h-screen bg-white">
+    <>
       <Navigation />
-
-      <section className="pt-32 pb-20 text-center">
-        <h1 className="text-6xl md:text-8xl font-bold text-cyan-900 mb-6">
-          Our Services
-        </h1>
-        <p className="text-xl text-violet-400 max-w-3xl mx-auto">
-          Comprehensive commercial cleaning solutions tailored to your facility's unique needs
-        </p>
-      </section>
-
-      <section className="py-32">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto space-y-32">
-            {services.map((service, index) => (
-              <ServiceCard key={service.id} service={service} index={index} />
-            ))}
+      <main>
+        <section className="bg-neutral-950 text-white pt-32 pb-20">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl">
+              <p className="text-neutral-500 text-sm uppercase tracking-widest mb-4">Our Services</p>
+              <h1 className="text-5xl md:text-6xl leading-tight mb-6">Commercial cleaning solutions</h1>
+              <p className="text-xl text-neutral-400 max-w-2xl">
+                Comprehensive cleaning services tailored to your facility's needs. Professional results, every time.
+              </p>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
+        <section className="py-24 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="max-w-5xl mx-auto">
+              {services.map((service, index) => (
+                <div key={index} className="grid lg:grid-cols-2 gap-12 py-16 border-b border-neutral-200">
+                  <div>
+                    <span className="text-neutral-400 font-mono text-sm">{String(index + 1).padStart(2, '0')}</span>
+                    <h2 className="text-3xl font-semibold text-neutral-900 mt-2 mb-4">{service.title}</h2>
+                    <p className="text-neutral-600 text-lg leading-relaxed">{service.desc}</p>
+                  </div>
+                  <div>
+                    <h3 className="text-sm uppercase tracking-widest text-neutral-500 mb-4">Includes</h3>
+                    <ul className="space-y-3">
+                      {service.details.map((detail, i) => (
+                        <li key={i} className="flex items-center gap-3 text-neutral-700">
+                          <div className="w-1.5 h-1.5 bg-neutral-400 rounded-full" />
+                          {detail}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 bg-neutral-950 text-white">
+          <div className="container mx-auto px-6 text-center">
+            <h2 className="text-3xl md:text-4xl mb-6">Need a custom solution?</h2>
+            <p className="text-neutral-400 mb-8 max-w-xl mx-auto">Every facility is different. Let's discuss your specific cleaning requirements.</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a href="tel:+19496878297" className="px-8 py-4 bg-white text-neutral-900 font-semibold hover:bg-neutral-100 transition-colors">Call (949) 687-8297</a>
+              <Link href="/contact" className="inline-flex items-center gap-2 px-8 py-4 border border-neutral-700 text-white font-semibold hover:bg-neutral-900 transition-colors">Get a Quote <ArrowRight size={18} /></Link>
+            </div>
+          </div>
+        </section>
+      </main>
       <Footer />
-    </main>
+    </>
   );
 }

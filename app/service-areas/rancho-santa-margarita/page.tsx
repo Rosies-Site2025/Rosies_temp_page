@@ -1,285 +1,96 @@
-'use client';
-
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
-import { motion } from 'framer-motion';
+import { ArrowRight } from 'lucide-react';
 
+export const metadata: Metadata = {
+  title: "Commercial Cleaning Rancho Santa Margarita | Janitorial Services",
+  description: "Professional commercial cleaning services in Rancho Santa Margarita, CA. Office cleaning, floor care, disinfection. Women-owned, licensed & insured. Free quotes - (949) 687-8297",
+  keywords: ['commercial cleaning Rancho Santa Margarita', 'janitorial services RSM', 'office cleaning Rancho Santa Margarita'],
+  openGraph: {
+    title: "Commercial Cleaning Rancho Santa Margarita | Rosie's Janitorial",
+    description: 'Professional commercial cleaning in Rancho Santa Margarita. Women-owned, licensed & insured.',
+    url: 'https://rosiesjanitorialoc.com/service-areas/rancho-santa-margarita',
+  },
+  alternates: { canonical: 'https://www.rosiesjanitorialoc.com/service-areas/rancho-santa-margarita' },
+};
 
-// ========================================
-// PAGE
-// ========================================
 export default function RanchoSantaMargaritaPage() {
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "serviceType": "Commercial Cleaning Services",
-    "provider": {
-      "@type": "LocalBusiness",
-      "name": "Rosie's Janitorial Services",
-      "telephone": "+19496878297",
-      "url": "https://rosiesjanitorialoc.com"
-    },
-    "areaServed": {
-      "@type": "City",
-      "name": "Rancho Santa Margarita",
-      "containedIn": {
-        "@type": "AdministrativeArea",
-        "name": "California"
-      }
-    }
-  };
-
   return (
     <>
       <Navigation />
-
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-      />
-
-      <div className="min-h-screen bg-gradient-to-b from-cyan-50 to-cyan-100">
-
-        {/* HERO */}
-        <section className="pt-32 pb-16 px-4">
-          <div className="max-w-8xl mx-auto text-center">
-            <div className="inline-block bg-cyan-100 text-cyan-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Our Hometown
-            </div>
-            <h1 className="text-8xl md:text-6xl font-serif-bold text-cyan-900 mb-6">
-              Rancho Santa Margarita's <span className="text-violet-400">Local Cleaning Experts</span>
-            </h1>
-            <p className="text-xl text-cyan-900 max-w-3xl mx-auto mb-8">
-              Based right here in RSM since 2009. We're your neighbors, committed to keeping our community's businesses spotless. Women-owned, family-operated, and dedicated to excellence.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+19496878297"
-                className="bg-cyan-600 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-700 transition-colors"
-              >
-                Call Now
-              </a>
-              <Link
-                href="/#contact"
-                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium border-2 border-cyan-600 hover:bg-violet-50 transition-colors"
-              >
-                Get Free Quote
-              </Link>
+      <main>
+        <section className="bg-neutral-950 text-white pt-32 pb-20">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl">
+              <p className="text-neutral-500 text-sm uppercase tracking-widest mb-4">Rancho Santa Margarita, CA</p>
+              <h1 className="text-5xl md:text-6xl leading-tight mb-6">Commercial Cleaning in Rancho Santa Margarita</h1>
+              <p className="text-xl text-neutral-400 max-w-2xl mb-10">
+                Trusted janitorial services for RSM businesses. Women-owned, licensed & insured. Serving the 92688 area.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a href="tel:+19496878297" className="inline-flex items-center justify-center px-8 py-4 bg-white text-neutral-900 font-semibold hover:bg-neutral-100 transition-colors">(949) 687-8297</a>
+                <Link href="/contact" className="inline-flex items-center justify-center gap-2 px-8 py-4 border border-neutral-700 text-white font-semibold hover:bg-neutral-900 transition-colors">Get a Quote <ArrowRight size={18} /></Link>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* WHY LOCAL */}
-        <section className="py-16 px-4 bg-white">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-serif-bold text-cyan-600 text-center mb-12">
-              Why RSM Businesses Choose Their Local Team
-            </h2>
-
-            <div className="grid md:grid-cols-3 gap-8">
-              {[
-                {
-                  icon: "🏠",
-                  title: "We're Your Neighbors",
-                  text: "Based in RSM, we live and work in this community. Your success is our community's success. We understand local businesses because we are one."
-                },
-                {
-                  icon: "⚡",
-                  title: "Always Available",
-                  text: "Being local means we can respond quickly to any needs. Emergency cleaning? Last-minute requests? We're just minutes away, ready to help."
-                },
-                {
-                  icon: "🤝",
-                  title: "Personal Service",
-                  text: "Work directly with the owner. No call centers, no corporate bureaucracy. Just honest, reliable service from people who care about RSM."
-                }
-              ].map((item, i) => (
-                <div key={i} className="text-center p-6">
-                  <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-cyan-100 flex items-center justify-center text-3xl">
-                    {item.icon}
-                  </div>
-                  <h3 className="text-xl text-cyan-900 font-semibold mb-3">
-                    {item.title}
-                  </h3>
-                  <p className="text-violet-400">
-                    {item.text}
-                  </p>
+        <section className="py-24 bg-white">
+          <div className="container mx-auto px-6">
+            <div className="grid lg:grid-cols-3 gap-16">
+              <div>
+                <p className="text-sm uppercase tracking-widest text-neutral-500 mb-4">What We Do</p>
+                <h2 className="text-4xl text-neutral-900 leading-tight">Complete commercial cleaning for RSM businesses</h2>
+              </div>
+              <div className="lg:col-span-2">
+                <div className="grid sm:grid-cols-2 gap-x-12 gap-y-10">
+                  {[
+                    { title: "Office Cleaning", desc: "Professional cleaning for offices and business centers." },
+                    { title: "Floor Care", desc: "Carpet cleaning, tile maintenance, stripping and waxing." },
+                    { title: "Medical Facilities", desc: "OSHA-compliant cleaning for healthcare practices." },
+                    { title: "Retail Cleaning", desc: "Specialized cleaning for retail and shopping locations." },
+                    { title: "Day Porter Services", desc: "On-site staff for continuous facility maintenance." },
+                    { title: "Green Cleaning", desc: "Eco-friendly solutions for your business." }
+                  ].map((s, i) => (
+                    <div key={i} className="border-l-2 border-neutral-200 pl-6">
+                      <h3 className="text-lg font-semibold text-neutral-900 mb-2">{s.title}</h3>
+                      <p className="text-neutral-600 text-sm">{s.desc}</p>
+                    </div>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
         </section>
 
-        {/* SERVICES */}
-        <ComprehensiveServicesSection />
+        <section className="py-24 bg-neutral-100">
+          <div className="container mx-auto px-6">
+            <div className="max-w-4xl mx-auto">
+              <p className="text-sm uppercase tracking-widest text-neutral-500 mb-4">Areas We Serve</p>
+              <h2 className="text-4xl text-neutral-900 leading-tight mb-10">Serving all Rancho Santa Margarita</h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-4 text-neutral-700">
+                {["RSM Town Center", "Dove Canyon", "Robinson Ranch", "Rancho Cielo", "Trabuco Canyon", "All 92688 areas"].map((area, i) => (
+                  <div key={i} className="py-2">{area}</div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </section>
 
-        {/* AREAS */}
-        <LocalRSMAreasSection />
-
-        {/* CTA */}
-        <section className="py-16 px-4 bg-gradient-to-r from-cyan-600 to-cyan-700 text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl text-cyan-900 font-bold font-serif mb-6">
-              Ready to Work with Your Local RSM Team?
-            </h2>
-            <p className="text-xl mb-8 opacity-90">
-              Experience the difference of working with a local, family-owned business that truly cares about our community. Free quotes, flexible scheduling, and exceptional service guaranteed.
-            </p>
+        <section className="py-20 bg-neutral-950 text-white">
+          <div className="container mx-auto px-6 text-center">
+            <h2 className="text-3xl md:text-4xl mb-6">Ready to get started?</h2>
+            <p className="text-neutral-400 mb-8 max-w-xl mx-auto">Free quotes and professional service for RSM businesses.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="tel:+19496878297"
-                className="bg-white text-cyan-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-100 transition-colors shadow-lg"
-              >
-                Call Us Today: (949) 687-8297
-              </a>
-              <Link
-                href="/#contact"
-                className="bg-cyan-800 text-white px-8 py-4 rounded-lg text-lg font-medium hover:bg-cyan-900 transition-colors"
-              >
-                Request Your Free Quote
-              </Link>
+              <a href="tel:+19496878297" className="px-8 py-4 bg-white text-neutral-900 font-semibold hover:bg-neutral-100 transition-colors">Call (949) 687-8297</a>
+              <Link href="/contact" className="px-8 py-4 border border-neutral-700 text-white font-semibold hover:bg-neutral-900 transition-colors">Request Quote</Link>
             </div>
-            <p className="mt-6 text-cyan-300 text-sm opacity-75">
-              Proudly serving our hometown since 2009 • Same-day quotes • Flexible scheduling
-            </p>
           </div>
         </section>
-      </div>
-
+      </main>
       <Footer />
     </>
-  );
-}
-
-// ========================================
-// SERVICES (EMOJI ICONS)
-// ========================================
-function ComprehensiveServicesSection() {
-  return (
-    <section className="py-24 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
-
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-cyan-900 mb-6">
-            Complete Commercial Cleaning Solutions
-          </h2>
-          <p className="text-xl text-violet-400 max-w-3xl mx-auto">
-            From small offices to large facilities, we provide comprehensive cleaning services tailored to RSM businesses
-          </p>
-        </div>
-
-        <div className="space-y-16">
-          <ServiceBlock
-            icon="🧹"
-            title="Daily Office Maintenance"
-            description="Professional daily cleaning that keeps your workspace pristine and productive"
-            features={[
-              "Trash removal and recycling management",
-              "Restroom cleaning and restocking",
-              "Break room and kitchen sanitization",
-              "Dusting and surface wiping",
-              "Vacuuming and mopping"
-            ]}
-          />
-
-          <ServiceBlock
-            icon="🧼"
-            title="Specialized Services"
-            description="Expert solutions for unique cleaning challenges and deep maintenance"
-            features={[
-              "Deep carpet cleaning and extraction",
-              "Hard floor stripping, waxing, and buffing",
-              "Window cleaning (interior and exterior)",
-              "Post-construction cleanup",
-              "Eco-friendly green cleaning options"
-            ]}
-          />
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function ServiceBlock({ icon, title, description, features }: any) {
-  return (
-    <motion.div
-      initial={{ opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ duration: 0.5 }}
-      className="bg-violet-50 rounded-3xl p-10 shadow-lg"
-    >
-      <div className="flex items-center gap-6 mb-6">
-        <div className="w-16 h-16 rounded-full bg-cyan-100 flex items-center justify-center text-3xl">
-          {icon}
-        </div>
-        <h3 className="text-3xl font-bold text-cyan-900">{title}</h3>
-      </div>
-
-      <p className="text-lg text-violet-400 mb-8">{description}</p>
-
-      <ul className="grid sm:grid-cols-2 gap-4">
-        {features.map((f: string, i: number) => (
-          <li key={i} className="flex gap-3 text-slate-700">
-            <span className="font-bold text-emerald-600">✓</span>
-            <span>{f}</span>
-          </li>
-        ))}
-      </ul>
-    </motion.div>
-  );
-}
-
-// ========================================
-// AREAS
-// ========================================
-function LocalRSMAreasSection() {
-  const neighborhoods = [
-    { name: "Robinson Ranch", zone: "North", businesses: "Professional Offices" },
-    { name: "Dove Canyon", zone: "East", businesses: "Retail & Commercial" },
-    { name: "Trabuco Highlands", zone: "Central", businesses: "Shopping Centers" },
-    { name: "Rancho Cielo", zone: "West", businesses: "Medical Facilities" },
-    { name: "Santa Margarita Village", zone: "South", businesses: "Retail & Dining" },
-    { name: "All 92688 areas", zone: "Complete", businesses: "Full Coverage", featured: true }
-  ];
-
-  return (
-    <section className="py-24 px-4 bg-white">
-      <div className="max-w-7xl mx-auto">
-
-        <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold text-cyan-900 mb-6">
-            Serving Every Corner of RSM
-          </h2>
-          <p className="text-xl text-cyan-600 max-w-3xl mx-auto">
-            We know Rancho Santa Margarita inside and out. From the business districts to neighborhood shopping centers, we serve:
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {neighborhoods.map((area, idx) => (
-            <motion.div
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: idx * 0.05 }}
-              className={`rounded-2xl p-8 shadow-lg ${
-                area.featured
-                  ? 'bg-gradient-to-br from-blue-100 to-blue-100 text-white'
-                  : 'bg-violet-50 text-slate-900'
-              }`}
-            >
-              <div className="text-sm text-violet-400 font-semibold mb-3">
-                {area.zone} RSM
-              </div>
-              <h3 className="text-2xl text-cyan-900 font-bold mb-2">{area.name}</h3>
-              <p className="text-sm text-cyan-600 opacity-90">{area.businesses}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
   );
 }

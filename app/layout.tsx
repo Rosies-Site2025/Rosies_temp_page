@@ -1,14 +1,19 @@
 // app/layout.tsx
 import type { Metadata } from 'next';
 import './globals.css';
-import { DM_Serif_Text } from 'next/font/google';
+import { Inter, Playfair_Display } from 'next/font/google';
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 
-const dmSerif = DM_Serif_Text({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--dm-serif-text",
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+  display: 'swap',
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  variable: '--font-playfair',
   display: 'swap',
 });
 
@@ -198,7 +203,7 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className={dmSerif.variable}>
+    <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
@@ -208,7 +213,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon-96x96.png" type="image/png" sizes="96x96" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#0891b2" />
+        <meta name="theme-color" content="#0f172a" />
       </head>
       <body className="antialiased">
         {children}

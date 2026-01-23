@@ -13,7 +13,7 @@ export default function ServicesSection() {
     {
       title: "Floor Care",
       description: "Professional carpet cleaning, hard floor maintenance, stripping, waxing, and buffing.",
-      image: "/icons_dana/floor-care.jpeg"
+      image: "/services/floor-care.png"
     },
     {
       title: "Disinfection Services",

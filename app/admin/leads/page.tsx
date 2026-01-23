@@ -1,7 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { Search, MapPin, Phone, ExternalLink, Plus, Check, Trash2 } from 'lucide-react';
+import { Search, MapPin, Phone, ExternalLink, Plus, Check, Trash2, Download } from 'lucide-react';
 import { supabase, Lead } from '@/lib/supabase';
 
 interface SearchResult {
@@ -119,6 +119,35 @@ export default function LeadsPage() {
     fetchSavedLeads();
   };
 
+  const downloadCSV = (data: SearchResult[] | Lead[], filename: string) => {
+    if (data.length === 0) return;
+
+    const headers = ['Name', 'Address', 'Phone', 'Website', 'Category', 'Rating'];
+    const csvRows = [
+      headers.join(','),
+      ...data.map(item => [
+        `"${(item.name || '').replace(/"/g, '""')}"`,
+        `"${(item.address || '').replace(/"/g, '""')}"`,
+        `"${(item.phone || '').replace(/"/g, '""')}"`,
+        `"${(item.website || '').replace(/"/g, '""')}"`,
+        `"${(item.category || '').replace(/"/g, '""')}"`,
+        item.rating || ''
+      ].join(','))
+    ];
+
+    const csvContent = csvRows.join('\n');
+    const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement('a');
+    link.setAttribute('href', url);
+    link.setAttribute('download', `${filename}-${new Date().toISOString().split('T')[0]}.csv`);
+    link.style.visibility = 'hidden';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+    URL.revokeObjectURL(url);
+  };
+
   const searchSuggestions = [
     // Tier 1: High-Probability, Recurring
     'Office buildings', 'Medical offices', 'Dental clinics', 'Urgent care centers',
@@ -208,7 +237,18 @@ export default function LeadsPage() {
         <div className="lg:col-span-2">
           <div className="bg-white border border-neutral-200">
             <div className="p-4 border-b border-neutral-200 flex items-center justify-between">
-              <h2 className="font-semibold text-neutral-900">Search Results ({allResults.length})</h2>
+              <div className="flex items-center gap-3">
+                <h2 className="font-semibold text-neutral-900">Search Results ({allResults.length})</h2>
+                {allResults.length > 0 && (
+                  <button
+                    onClick={() => downloadCSV(allResults, 'search-results')}
+                    className="flex items-center gap-1 px-3 py-1 text-sm bg-neutral-100 text-neutral-700 hover:bg-neutral-200 transition-colors"
+                    title="Download search results as CSV"
+                  >
+                    <Download size={14} /> CSV
+                  </button>
+                )}
+              </div>
               {totalPages > 1 && (
                 <div className="flex items-center gap-2 text-sm">
                   <button
@@ -283,8 +323,17 @@ export default function LeadsPage() {
         {/* Saved Leads */}
         <div>
           <div className="bg-white border border-neutral-200">
-            <div className="p-4 border-b border-neutral-200">
+            <div className="p-4 border-b border-neutral-200 flex items-center justify-between">
               <h2 className="font-semibold text-neutral-900">Saved Leads ({savedLeads.length})</h2>
+              {savedLeads.length > 0 && (
+                <button
+                  onClick={() => downloadCSV(savedLeads, 'saved-leads')}
+                  className="flex items-center gap-1 px-2 py-1 text-xs bg-neutral-100 text-neutral-700 hover:bg-neutral-200 transition-colors"
+                  title="Download saved leads as CSV"
+                >
+                  <Download size={12} /> CSV
+                </button>
+              )}
             </div>
             <div className="divide-y divide-neutral-100 max-h-[500px] overflow-auto">
               {savedLeads.length === 0 ? (

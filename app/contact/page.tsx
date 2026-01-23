@@ -79,8 +79,8 @@ export default function ContactPage() {
                     </div>
                     <div>
                       <div className="text-sm text-neutral-500 mb-1">Email</div>
-                      <a href="mailto:rosiesjanitorial@yahoo.com" className="text-xl text-neutral-900 font-semibold hover:underline">
-                        rosiesjanitorial@yahoo.com
+                      <a href="mailto:info@rosiesjanitorialoc.com" className="text-xl text-neutral-900 font-semibold hover:underline">
+                        info@rosiesjanitorialoc.com
                       </a>
                     </div>
                   </div>
